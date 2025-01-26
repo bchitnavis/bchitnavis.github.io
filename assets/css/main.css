@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
 
 /*
 	Minimaxing by HTML5 UP
@@ -96,7 +96,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4 {
 		color: #007897;
-		font-weight: normal;
+		font-weight: 100;
 	}
 
 	h1 {
