@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap");
 
 /*
 	Minimaxing by HTML5 UP
@@ -2010,4 +2010,193 @@ input, select, textarea {
 					color: #A6A88F;
 				}
 
+	}
+
+/* Visual refresh overrides */
+
+	:root {
+		--mm-bg: #f3f0e8;
+		--mm-ink: #2c2b28;
+		--mm-muted: #5f6258;
+		--mm-brand: #176f7d;
+		--mm-brand-2: #d97b3f;
+		--mm-card: #fffdf9;
+		--mm-border: rgba(40, 48, 33, 0.15);
+		--mm-shadow: 0 10px 30px rgba(26, 30, 22, 0.12);
+	}
+
+	body {
+		font-family: "Manrope", "Segoe UI", sans-serif;
+		color: var(--mm-ink);
+		letter-spacing: -0.2px;
+		background:
+			radial-gradient(circle at 10% 15%, rgba(217, 123, 63, 0.12), transparent 30%),
+			radial-gradient(circle at 90% 10%, rgba(23, 111, 125, 0.12), transparent 28%),
+			var(--mm-bg);
+	}
+
+	h1, h2, h3, h4 {
+		font-family: "Fraunces", "Times New Roman", serif;
+		letter-spacing: -0.4px;
+	}
+
+	p {
+		color: var(--mm-muted);
+		line-height: 1.85em;
+	}
+
+	#header-wrapper {
+		background-image: linear-gradient(135deg, #0f6e83, #1c8a84 60%, #3ea38d);
+		box-shadow: 0 8px 18px rgba(15, 49, 54, 0.22);
+	}
+
+	#header {
+		height: 88px;
+		line-height: 88px;
+	}
+
+	#header h1 a {
+		font-size: 1.9em;
+		font-weight: 700;
+		color: #ffffff;
+		text-shadow: 0 2px 10px rgba(7, 26, 30, 0.35);
+	}
+
+	#header nav a {
+		font-family: "Manrope", "Segoe UI", sans-serif;
+		text-transform: uppercase;
+		font-size: 0.72em;
+		letter-spacing: 1px;
+		padding: 0 16px;
+		border-radius: 999px;
+		margin-left: 8px;
+		transition: background-color 0.2s ease, color 0.2s ease;
+	}
+
+	#header nav a.current-page-item,
+	#header nav a:hover {
+		background: rgba(255, 255, 255, 0.18);
+		color: #ffffff;
+	}
+
+	#banner-wrapper {
+		background: linear-gradient(160deg, #dfe8cf, #d3dbc5 50%, #f3e6d7);
+		padding: 28px 0;
+	}
+
+	#banner {
+		box-shadow: var(--mm-shadow);
+		border: 1px solid rgba(255, 255, 255, 0.7);
+		border-radius: 18px;
+		background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.95), rgba(248, 244, 237, 0.92));
+		animation: banner-rise 0.8s ease both;
+	}
+
+	#banner h2 {
+		font-size: clamp(2.2em, 4vw, 3.2em);
+		color: #1f4f5b;
+	}
+
+	#banner span {
+		font-size: 1.22em;
+		color: #5d6a62;
+	}
+
+	#main {
+		padding: 60px 0;
+	}
+
+	#main section,
+	#main article {
+		background: var(--mm-card);
+		border: 1px solid var(--mm-border);
+		border-radius: 14px;
+		padding: 26px;
+		box-shadow: var(--mm-shadow);
+	}
+
+	#main section h2,
+	#main article h2 {
+		color: #1d5f6e;
+	}
+
+	ul.small-image-list li,
+	ul.big-image-list li {
+		padding: 12px;
+		border-radius: 10px;
+		transition: background-color 0.2s ease;
+	}
+
+	ul.small-image-list li:hover,
+	ul.big-image-list li:hover {
+		background: rgba(23, 111, 125, 0.06);
+	}
+
+	ul.small-image-list li img,
+	ul.big-image-list li img,
+	.blog-post-image {
+		border-radius: 10px;
+		box-shadow: 0 6px 16px rgba(37, 43, 31, 0.2);
+	}
+
+	.button {
+		border-radius: 999px;
+		font-family: "Manrope", "Segoe UI", sans-serif;
+		font-weight: 700;
+		letter-spacing: 0.2px;
+		background: linear-gradient(135deg, var(--mm-brand), #2f8f9f);
+		box-shadow: 0 8px 18px rgba(23, 111, 125, 0.28);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.button:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 12px 22px rgba(23, 111, 125, 0.33);
+	}
+
+	#footer-wrapper {
+		background: linear-gradient(160deg, #e7ddcc, #ddd0ba);
+	}
+
+	#footer-wrapper section {
+		background: rgba(255, 255, 255, 0.55);
+		border-radius: 14px;
+		padding: 20px;
+	}
+
+	@keyframes banner-rise {
+		from {
+			opacity: 0;
+			transform: translateY(12px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#main {
+			padding: 36px 0;
+		}
+
+		#main section,
+		#main article {
+			padding: 20px;
+		}
+
+		#banner {
+			border-radius: 14px;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#banner {
+			animation: none;
+		}
+
+		.button {
+			transition: none;
+		}
 	}
